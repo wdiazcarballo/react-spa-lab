@@ -7,7 +7,7 @@
 - Node.js (เวอร์ชัน 14.18+ หรือสูงกว่า)
 - Git ติดตั้งในเครื่อง
 - บัญชี GitHub
-- โปรแกรมแก้ไขโค้ด (แนะนำ VS Code)
+- โปรแกรม VS Code
 
 ## ขั้นตอนที่ 1: สร้างโปรเจค Vite ใหม่
 
@@ -24,7 +24,7 @@ npm install
 
 ## ขั้นตอนที่ 2: จัดโครงสร้างโปรเจค
 
-1. โครงสร้างโปรเจคของคุณควรเป็นดังนี้:
+1. โครงสร้างโปรเจคควรเป็นดังนี้:
 ```
 my-react-spa/
 ├── node_modules/
@@ -62,7 +62,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/my-react-spa/', // แทนที่ด้วยชื่อ repository ของคุณ
+  base: '/my-react-spa/', // แทนที่ด้วยชื่อ repository ของตัวเอง
 })
 ```
 
@@ -169,7 +169,7 @@ npm run deploy
    - เลือก branch "gh-pages" เป็น source
    - บันทึกการเปลี่ยนแปลง
 
-เว็บไซต์ของคุณจะใช้งานได้ที่: `https://your-username.github.io/my-react-spa`
+เช็คว่าเว็บไซต์ใช้งานได้ที่: `https://your-username.github.io/my-react-spa`
 
 ## เคล็ดลับเพิ่มเติม
 
@@ -270,4 +270,4 @@ git pull origin main
 npm run deploy
 ```
 
-อย่าลืมทดสอบแอปพลิเคชันของคุณอย่างละเอียดก่อน deploy ไปยัง production ใช้เซิร์ฟเวอร์สำหรับการพัฒนา (`npm run dev`) สำหรับการทดสอบในเครื่อง และตรวจสอบให้แน่ใจว่าทุกเส้นทางและฟีเจอร์ทำงานตามที่คาดหวัง
+ก่อน Deploy ไปยัง Production อย่าลืมทดสอบแอปพลิเคชันอย่างละเอียดก่อน ควรรันเซิร์ฟเวอร์ในโหมดสำหรับการพัฒนา (`npm run dev`) ทดสอบในเครื่องตัวเองก่อน ให้แน่ใจว่าทุกเส้นทางและฟีเจอร์ทำงานเป็นไปตามที่คาดหวัง
